@@ -1,0 +1,21 @@
+<?php
+
+
+
+if(isset($_POST['edit_btn']))
+{
+    $id = $_POST['edit_btn'];
+
+    $query = "SELECT * FROM `register` WHERE id='$id' ";
+    $sql_run = mysqli_query($conn,$query);
+
+    foreach($sql_run as $row)
+    {
+?>
+
+
+<?php
+    }
+}
+
+?>
